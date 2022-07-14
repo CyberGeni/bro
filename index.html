@@ -13,13 +13,12 @@
     <script src="main.js" defer></script>
 </head>
 <body class="font-['Clash_Grotesk'] bg-[#181B18] text-[#EBEFE9] ">
+    <!-- background noise-->
     <aside class="bg-noise absolute ">
         <img class="left-0 w-2/3" src="images/green_blur.svg" alt="">
         <img class="right-0 w-2/3" src="images/yellow_blur.svg" alt="">
     </aside>
-
-    
-
+    <!-- modal -->
     <section id="modal" class="relative hidden overflow-hidden flex items-center justify-center h-screen">
         
         <div class="bg-[#1E2419] flex flex-col p-12 absolute z-100 space-y-4 w-2/3 max-w-xl">
@@ -55,25 +54,29 @@
             </button>
         </div>
     </section>
-    
+    <!-- navbar -->
     <header class="px-8 sm:px-12 md:px-16 lg:px-24 flex justify-between h-32 items-center">
         <h1>bro.</h1>
-        <nav class="space-x-4 sm:space-x-5 md:space-x-6">
+        <nav id="modal" class="hidden sm:space-x-5 md:space-x-6 sm:flex flex-col sm:flex-row items-center justify-center w-[60vh] h-screen sm:h-fit absolute sm:relative z-10000 top-0 backdrop-blur-xl sm:backdrop-blur-none">
             <a href="#explore" class="hover:cursor-pointer text-[#CFD717]">Explore</a>
             <a href="collections.html" class="hover:cursor-pointer active:text-[#CFD717]">My collections</a>
             <a href="" class="hover:cursor-pointer active:text-[#CFD717] hover:text-[#CFD717]">Marketplace</a>
         </nav>
-        <button id="openModal" class="px-4 py-2 font-medium bg-[#CFD717] text-[#1E2419]">Connect wallet</button>
+        <button id="openModal" class="hidden sm:block px-4 py-2 font-medium bg-[#CFD717] text-[#1E2419]">Connect wallet</button>
+        <button id="openModal" class="sm:hidden"><img id="openModal" src="images/menu.svg" alt=""></button>
     </header>
+    <!-- main -->
     <main id="explore" class="px-8 sm:px-12 md:px-16 lg:px-24">
+        <!-- grid header -->
         <section class="flex flex-col h-[77vh] items-center justify-center text-center">
             <h1 class="text-6xl font-semibold max-w-4xl">One <span class="gradient-text">Multi-wallet</span> to manage all your NFTs</h1>
-            <p class="font-medium text-white max-w-xl opacity-75 my-4">Discover and manage all your NFTs from one wallets as we currently support most blockchains and wallets.</p>
-            <button class="sm:hidden px-4 py-2 font-medium bg-[#CFD717] text-[#1E2419]">Connect wallet</button>
+            <p class="font-medium z-[-1] text-white max-w-xl opacity-75 my-4">Discover and manage all your NFTs from one wallets as we currently support most blockchains and wallets.</p>
+            <button id="openModal" class="sm:hidden px-4 py-2 font-medium bg-[#CFD717] text-[#1E2419]">Connect wallet</button>
         </section>
 
         <h2 class="text-xl font-medium my-6">Community projects</h2>
-
+        
+        <!-- NFT card grids-->
         <section class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 my-6 content-center">
             <div class="bg-[#1E2419] p-3">
                 <div class="relative">

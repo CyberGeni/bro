@@ -3,8 +3,9 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-body {
-    
+nav {
+    overflow: hidden;
+    transition: all ease 30s infinite;
 }
 .bg-noise {
     filter: blur(36px);
