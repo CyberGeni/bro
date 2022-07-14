@@ -10,20 +10,84 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.js" defer></script>
 </head>
 <body class="font-['Clash_Grotesk'] bg-[#181B18] text-[#EBEFE9] ">
     <aside class="bg-noise absolute ">
         <img class="left-0 w-2/3" src="images/green_blur.svg" alt="">
         <img class="right-0 w-2/3" src="images/yellow_blur.svg" alt="">
     </aside>
+
+    
+
+    <section class="relative flex items-center justify-center h-screen">
+        <div class="bg-[#1E2419] flex flex-col p-12 absolute z-100">
+            <button>
+                <img src="images/metamask.svg" alt="">
+                <span>Metamask</span>
+                <img src="images/links.svg" alt="">
+            </button>
+            <button>
+                <img src="" alt="">
+                <span>Trust Wallet</span>
+                <img src="images/links.svg" alt="">
+            </button>
+            <button>
+                <img src="" alt="">
+                <span>Coinbase</span>
+                <img src="images/links.svg" alt="">
+            </button>
+            <button>
+                <img src="" alt="">
+                <span>AlplaWallet</span>
+                <img src="images/links.svg" alt="">
+            </button>
+            <button>
+                <img src="" alt="">
+                <span>Enjin</span>
+                <img src="images/links.svg" alt="">
+            </button>
+        </div>
+    </section>
+
+    <section class="hidden relative flex items-center justify-center h-screen">
+        <div class="bg-[#1E2419] p-12 absolute z-100">
+            <button>
+                <img src="" alt="">
+                <span>Metamask</span>
+                <img src="" alt="">
+            </button>
+            <button>
+                <img src="" alt="">
+                <span>Trust Wallet</span>
+                <img src="" alt="">
+            </button>
+            <button>
+                <img src="" alt="">
+                <span>Coinbase</span>
+                <img src="" alt="">
+            </button>
+            <button>
+                <img src="" alt="">
+                <span>AlplaWallet</span>
+                <img src="" alt="">
+            </button>
+            <button>
+                <img src="" alt="">
+                <span>Enjin</span>
+                <img src="" alt="">
+            </button>
+        </div>
+    </section>
+    
     <header class="px-8 sm:px-12 md:px-16 lg:px-24 flex justify-between h-32 items-center">
         <h1>bro.</h1>
         <nav class="space-x-4 sm:space-x-5 md:space-x-6">
-            <a href="#explore" class="hover:cursor-pointer active:text-[#CFD717]">Explore</a>
-            <a href="" class="hover:cursor-pointer active:text-[#CFD717]">My collections</a>
-            <a href="" class="hover:cursor-pointer active:text-[#CFD717]">Marketplace</a>
+            <a href="#explore" class="hover:cursor-pointer text-[#CFD717]">Explore</a>
+            <a href="collections.html" class="hover:cursor-pointer active:text-[#CFD717]">My collections</a>
+            <a href="" class="hover:cursor-pointer active:text-[#CFD717] hover:text-[#CFD717]">Marketplace</a>
         </nav>
-        <button class="px-4 py-2 font-medium bg-[#CFD717] text-[#1E2419]">Connect wallet</button>
+        <button id="connectWalletModal" class="px-4 py-2 font-medium bg-[#CFD717] text-[#1E2419]">Connect wallet</button>
     </header>
     <main id="explore" class="px-8 sm:px-12 md:px-16 lg:px-24">
         <section class="flex flex-col h-[77vh] items-center justify-center text-center">
@@ -44,44 +108,44 @@
                 <h2 class="text-white font-medium text-xl my-2">Sneakhead #234</h2>
                 <div class="flex justify-between my-2">
                     <h3 class="flex"><img src="images/eth_icon.svg" alt="">0.09 ETH</h3>
-                    <a href="#" class="text-[#CFD717]">Rarible</a>
+                    <a href="#" id="category" class="text-[#CFD717]">Rarible</a>
                 </div>
             </div>
 
             <div class="bg-[#1E2419] p-3">
                 <div class="relative">
                     <img class="absolute top-3 right-3" src="images/rarible.svg" alt="">
-                    <img class="w-full" src="/images/cryptopunk#234.svg" alt="">
+                    <img class="w-full" src="/images/cryptopunk234.svg" alt="">
                 </div>
                 <h4 class="text-[#C6CBC6] text-xs font-medium mt-4">CRYPTOPUNK OFFICIAL</h4>
                 <h2 class="text-white font-medium text-xl my-2">Cryptopunk #234</h2>
                 <div class="flex justify-between">
                     <h3 class="flex"><img src="images/eth_icon.svg" alt="">0.09 ETH</h3>
-                    <a href="#" class="text-[#CFD717]">Open Sea</a>
+                    <a href="#" id="category" class="text-[#CFD717]">Open Sea</a>
                 </div>
             </div>
             <div class="bg-[#1E2419] p-3">
                 <div class="relative">
                     <img class="absolute top-3 right-3" src="images/foundation.svg" alt="">
-                    <img class="w-full" src="images/oldwizard#1234.svg" alt="">
+                    <img class="w-full" src="images/oldwizard1234.svg" alt="">
                 </div>
                 <h4 class="text-[#C6CBC6] text-xs font-medium mt-4">WZRDS</h4>
                 <h2 class="text-white font-medium text-xl my-2">Old Wizard #1234</h2>
                 <div class="flex justify-between">
                     <h3 class="flex"><img src="images/eth_icon.svg" alt="">0.009 ETH</h3>
-                    <a href="#" class="text-[#CFD717]">Foundation</a>
+                    <a href="#" id="category" class="text-[#CFD717]">Foundation</a>
                 </div>
             </div>
             <div class="bg-[#1E2419] p-3">
                 <div class="relative">
                     <img class="absolute top-3 right-3" src="images/foundation.svg" alt="">
-                    <img class="w-full" src="images/oldwizard#235.svg" alt="">
+                    <img class="w-full" src="images/oldwizard235.svg" alt="">
                 </div>
                 <h4 class="text-[#C6CBC6] text-xs font-medium mt-4">WZRDS</h4>
                 <h2 class="text-white font-medium text-xl my-2">Old Wizard #235</h2>
                 <div class="flex justify-between">
                     <h3 class="flex"><img src="images/eth_icon.svg" alt="">0.09 ETH</h3>
-                    <a href="#" class="text-[#CFD717]">Foundation</a>
+                    <a href="#" id="category" class="text-[#CFD717]">Foundation</a>
                 </div>
             </div>
             <div class="bg-[#1E2419] p-3">
@@ -94,7 +158,7 @@
                 <h2 class="text-white font-medium text-xl my-2">Sneakhead #234</h2>
                 <div class="flex justify-between">
                     <h3 class="flex"><img src="images/eth_icon.svg" alt="">0.09 ETH</h3>
-                    <a href="#" class="text-[#CFD717]">Rarible</a>
+                    <a href="#" id="category" class="text-[#CFD717]">Rarible</a>
                 </div>
             </div>
         </section>

@@ -9,15 +9,16 @@ body {
 .bg-noise {
     filter: blur(36px);
     position: fixed;
+    z-index: -1;
+    max-height: 100vh;
+    overflow: hidden;
     transition: all ease 30s infinite;
 }
 .bg-noise img:first-child {
-    transition-duration: inf;
     animation: 25s animation_uno;
     animation-iteration-count: infinite;
 }
 .bg-noise img:last-child {
-    transition-duration: inf;
     animation: 25s animation_uno;
     animation-iteration-count: infinite;
 }
