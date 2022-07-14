@@ -20,62 +20,38 @@
 
     
 
-    <section class="relative flex items-center justify-center h-screen">
-        <div class="bg-[#1E2419] flex flex-col p-12 absolute z-100">
-            <button>
-                <img src="images/metamask.svg" alt="">
-                <span>Metamask</span>
-                <img src="images/links.svg" alt="">
+    <section id="modal" class="relative hidden overflow-hidden flex items-center justify-center h-screen">
+        
+        <div class="bg-[#1E2419] flex flex-col p-12 absolute z-100 space-y-4 w-2/3 max-w-xl">
+            <header class="text-center my-6">
+                <h1 class="font-medium text-xl">Wallets</h1>
+                <p>Add and manage your NFT wallets</p>
+                <button id="closeModal" class="bg-[#CFD717] absolute p-3 right-8 top-8"><img src="images/close.svg" alt=""></button>
+            </header>
+            <button class="flex justify-between items-center p-2 border-2 border-[#4E5130] w-full">
+                <img class="w-12" src="images/metamask.svg" alt="">
+                <span class="w-full text-left ml-3">Metamask</span>
+                <img class="pr-3" src="images/links.svg" alt="">
             </button>
-            <button>
-                <img src="" alt="">
-                <span>Trust Wallet</span>
-                <img src="images/links.svg" alt="">
+            <button class="flex justify-between items-center p-2 border-2 border-[#4E5130] w-full">
+                <img class="w-12" src="images/TrustWallet.svg" alt="">
+                <span class="w-full text-left ml-3">Trust Wallet</span>
+                <img class="pr-3" src="images/links.svg" alt="">
             </button>
-            <button>
-                <img src="" alt="">
-                <span>Coinbase</span>
-                <img src="images/links.svg" alt="">
+            <button class="flex justify-between items-center p-2 border-2 border-[#4E5130] w-full">
+                <img class="w-12" src="images/Coinbase.svg" alt="">
+                <span class="w-full text-left ml-3">Coinbase</span>
+                <img class="pr-3" src="images/links.svg" alt="">
             </button>
-            <button>
-                <img src="" alt="">
-                <span>AlplaWallet</span>
-                <img src="images/links.svg" alt="">
+            <button class="flex justify-between items-center p-2 border-2 border-[#4E5130] w-full">
+                <img class="w-12" src="images/AlphaWallet.svg" alt="">
+                <span class="w-full text-left ml-3">AlplaWallet</span>
+                <img class="pr-3" src="images/links.svg" alt="">
             </button>
-            <button>
-                <img src="" alt="">
-                <span>Enjin</span>
-                <img src="images/links.svg" alt="">
-            </button>
-        </div>
-    </section>
-
-    <section class="hidden relative flex items-center justify-center h-screen">
-        <div class="bg-[#1E2419] p-12 absolute z-100">
-            <button>
-                <img src="" alt="">
-                <span>Metamask</span>
-                <img src="" alt="">
-            </button>
-            <button>
-                <img src="" alt="">
-                <span>Trust Wallet</span>
-                <img src="" alt="">
-            </button>
-            <button>
-                <img src="" alt="">
-                <span>Coinbase</span>
-                <img src="" alt="">
-            </button>
-            <button>
-                <img src="" alt="">
-                <span>AlplaWallet</span>
-                <img src="" alt="">
-            </button>
-            <button>
-                <img src="" alt="">
-                <span>Enjin</span>
-                <img src="" alt="">
+            <button class="flex justify-between items-center p-2 border-2 border-[#4E5130] w-full">
+                <img class="w-12" src="images/Enjin.svg" alt="">
+                <span class="w-full text-left ml-3">Enjin</span>
+                <img class="pr-3" src="images/links.svg" alt="">
             </button>
         </div>
     </section>
@@ -87,7 +63,7 @@
             <a href="collections.html" class="hover:cursor-pointer active:text-[#CFD717]">My collections</a>
             <a href="" class="hover:cursor-pointer active:text-[#CFD717] hover:text-[#CFD717]">Marketplace</a>
         </nav>
-        <button id="connectWalletModal" class="px-4 py-2 font-medium bg-[#CFD717] text-[#1E2419]">Connect wallet</button>
+        <button id="openModal" class="px-4 py-2 font-medium bg-[#CFD717] text-[#1E2419]">Connect wallet</button>
     </header>
     <main id="explore" class="px-8 sm:px-12 md:px-16 lg:px-24">
         <section class="flex flex-col h-[77vh] items-center justify-center text-center">
